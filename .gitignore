@@ -27,3 +27,5 @@ platforms/ios/www/
 DerivedData
 .idea/
 
+GithubClient/Pods
+Podfile.lock

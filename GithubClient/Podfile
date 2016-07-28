@@ -1,0 +1,35 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+xcodeproj 'GithubClient/GithubClient.xcodeproj'
+use_frameworks!
+inhibit_all_warnings!
+
+
+def core_pods
+
+    # RAC
+    pod 'ReactiveCocoa', '4.2.1'
+
+    # alamofire
+    pod 'Alamofire', '3.4.1'
+
+end
+
+target 'GithubClient' do
+    
+    pod 'SFCoreUtils', :git => 'https://github.com/stanfy/SFCoreUtils.git', :tag => '0.1.10'
+    pod 'NimbusSwift', :git => 'https://github.com/vvbogdan/NimbusSwift.git', :branch => 'develop'
+
+    # Layout & UI
+    pod 'SVProgressHUD', '2.0.3'
+    pod 'HexColors', '4.0.0'
+    pod 'SDWebImage', '3.8.1'
+    
+    # JSON parsing
+    pod 'SwiftyJSON', '2.3.2'
+
+    core_pods
+end
+
+
